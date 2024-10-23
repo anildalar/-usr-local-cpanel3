@@ -1,0 +1,53 @@
+<h3 class="label--title">
+[% locale.maketext('Enter the security code for “[_1]”', user) %]
+</h3>
+<form novalidate name="tfa_login_form" id="tfa_login_form" method="post" action="[% cp_security_token %]/">
+    <div class="input-field-login icon token-container">
+        <input name="tfatoken"
+            id="tfatoken"
+            class="std_textbox"
+            type="text"
+            placeholder="[% locale.maketext('Security code') %]"
+            autofocus="autofocus"
+            autocomplete="off"
+            required>
+    </div>
+    <div class="controls">
+        <div class="login-btn">
+            <button type="submit" id="submit-button" class="input-button" />[% locale.maketext("Continue") %]</button>
+        </div>
+    </div>
+</form>
+<script>
+
+/* So, we try to smuggle redirects in via GET params and also pass other
+important info along sometimes here, so the login flow for that will be
+broken unless we translate those incoming params to hidden form elements. */
+let queryStr = window.location.search;
+queryStr = queryStr.substr(1); // Chop off ?
+let exploded = queryStr.split("&");
+exploded = exploded.flatMap( (kv) => kv.split("=") );
+
+for ( let i = 0; i < exploded.length; i++ ) {
+   let input = document.createElement("input");
+   input.type  = "hidden";
+   input.name  = exploded[i];
+   input.value = exploded[++i];
+   document.querySelector("#tfa_login_form").append(input);
+}
+let path = location.pathname;
+
+// Check length, because this can be '/'.
+if ( path.length > 1 ) {
+   path = path.substr(1);
+   path = path.replace( new RegExp("^cpsess[0-9]+/"), "" );
+   document.forms[0].action += path;
+
+   /* Make sure to also grab the path segment and insert it as goto_uri.*/
+   let input = document.createElement("input");
+   input.type  = "hidden";
+   input.name  = 'goto_uri';
+   input.value = path;
+   document.querySelector("#tfa_login_form").append(input);
+}
+</script>

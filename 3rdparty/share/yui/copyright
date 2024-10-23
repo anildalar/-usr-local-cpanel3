@@ -1,0 +1,27 @@
+Files: *
+Copyright: 2011 Yahoo! Inc. All rights reserved.
+License: BSD-3-clause (please see /usr/local/cpanel/3rdparty/share/common-licenses/BSD-3)
+
+Files: as-docs/asdoc.js, as-docs/cookies.js, as-docs/print.css, as-docs/style.css
+Copyright: Copyright 2005-2007 Adobe Systems Incorporated
+License: BSD-3-clause (please see /usr/local/cpanel/3rdparty/share/common-licenses/BSD-3)
+
+Files: assets/dpSyntaxHighlighter.js, examples/profilerviewer/assets/dpSyntaxHighlighter.js, examples/treeview/assets/js/dpSyntaxHighlighter.js
+Copyright: 2004 Alex Gorbatchev.
+License: LGPL (please see /usr/local/cpanel/3rdparty/share/common-licenses/LGPL)
+
+File: uild/utilities/utilities.js, build/animation/animation.js, build/animation/animation-min.js
+Copyright: 2001 Robert Penner All rights reserved.
+License: BSD-3-clause (please see /usr/local/cpanel/3rdparty/share/common-licenses/BSD-3)
+
+File: examples/datatable/assets/php/JSON.php, examples/imagecropper/assets/JSON.php
+Copyright: 2005 Michal Migurski
+License: BSD-3-clause (please see /usr/local/cpanel/3rdparty/share/common-licenses/BSD-3)
+
+File: examples/storage/assets/gears_init.js
+Copyright: 2007 Google Inc.
+License: BSD-3-clause (please see /usr/local/cpanel/3rdparty/share/common-licenses/BSD-3)
+
+File: tests/common/tests/functional/yui/src/test/java/org/json/JSONObject.java
+Copyright: 2002 JSON.org
+License: MIT (please see /usr/local/cpanel/3rdparty/share/common-licenses/MIT)

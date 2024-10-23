@@ -1,0 +1,12 @@
+Files: *
+Copyright: 2000-2010 - Laurent Destailleur - eldy@users.sourceforge.net
+License: GPL-2 (please see /usr/local/cpanel/3rdparty/share/common-licenses/GPL-2)
+Source: http://awstats.sourceforge.net
+
+Files: docs/scripts/lang-apollo.js
+Copyright: 2009 Onno Hommes.
+License: Apache-2 (please see /usr/local/cpanel/3rdparty/share/common-licenses/Apache-2.0)
+
+Files: docs/scripts/*.js
+Copyright: 2006-2009 Google Inc.
+License: Apache-2 (please see /usr/local/cpanel/3rdparty/share/common-licenses/Apache-2.0)

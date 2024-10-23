@@ -1,0 +1,71 @@
+#!/usr/local/cpanel/3rdparty/bin/perl
+
+#                                      Copyright 2024 WebPros International, LLC
+#                                                           All rights reserved.
+# copyright@cpanel.net                                         http://cpanel.net
+# This code is subject to the cPanel license. Unauthorized copying is prohibited.
+
+package libexec::cpanelOnboot;
+
+use cPstrict;
+
+use Cpanel::CleanINC ();    # PPI USE OK - this needs to be first
+
+use Cpanel::Debug           ();
+use Cpanel::PIDFile         ();
+use Cpanel::SafeRun::Errors ();
+
+use Try::Tiny;
+
+use constant PID_FILE => q[/var/run/cpanel-onboot.pid];
+
+our @dirs_to_check = ( '/usr/local/cpanel/libexec/on_boot', '/var/cpanel/on_boot' );
+
+exit( run(@ARGV) // 0 ) unless caller();
+
+sub run (@args) {
+
+    # acquire the pid lock
+    my $pid = Cpanel::PIDFile->new(PID_FILE);
+
+    notify("On Boot Handler started");
+
+    foreach my $dir (@dirs_to_check) {
+        next unless -d $dir;
+
+        my @to_run;
+
+        opendir my $fd, $dir or next;
+        while ( my $line = readdir($fd) ) {
+            next if $line =~ m/^\./;
+
+            my $path = $dir . "/" . $line;
+            push @to_run, $path if -x $path;
+        }
+        close $fd;
+
+        # enforce order when running scripts, so we can use 00-*, 01-*, ...
+        foreach my $path ( sort @to_run ) {
+            try {
+                notify("On Boot Handler running $path");
+                my $out = Cpanel::SafeRun::Errors::saferunallerrors($path);
+                notify("Failure from $path") if $?;
+                notify($out)                 if length $out;
+            };
+        }
+    }
+
+    notify("On Boot Handler completed");
+
+    return 0;
+}
+
+sub notify ($msg) {
+    return unless length $msg;
+
+    Cpanel::Debug::log_info($msg);
+
+    return;
+}
+
+1;

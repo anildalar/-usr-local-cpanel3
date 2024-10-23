@@ -1,0 +1,7 @@
+Files: *
+Copyright: 1994-2005 Free Software Foundation, Inc.
+License: GPL-2 ( please see /usr/local/cpanel/3rdparty/share/common-licenses/GPL-2 )
+
+Files: install-sh
+Copyright: 1994 X Consortium
+License: GPL-2 ( please see /usr/local/cpanel/3rdparty/share/common-licenses/GPL-2 )

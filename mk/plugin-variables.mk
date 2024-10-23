@@ -1,0 +1,2 @@
+PLUGIN_JUPITER_NG_APPS:=koality/signup
+PLUGIN_WHM_NG_APPS:=

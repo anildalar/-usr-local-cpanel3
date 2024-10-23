@@ -1,0 +1,11 @@
+[23-Oct-2024 12:59:08] ERROR: No pool defined. at least one pool section must be specified in config file
+[23-Oct-2024 12:59:08] ERROR: failed to post process the configuration
+[23-Oct-2024 12:59:08] ERROR: FPM initialization failed
+[23-Oct-2024 13:03:41] NOTICE: fpm is running, pid 69978
+[23-Oct-2024 13:03:41] NOTICE: ready to handle connections
+[23-Oct-2024 13:04:21] NOTICE: Reloading in progress ...
+[23-Oct-2024 13:04:21] NOTICE: reloading: execvp("/usr/local/cpanel/3rdparty/sbin/cpanel_php_fpm", {"/usr/local/cpanel/3rdparty/sbin/cpanel_php_fpm", "-y", "/usr/local/cpanel/etc/php-fpm.conf"})
+[23-Oct-2024 13:04:22] NOTICE: using inherited socket fd=7, "/var/cpanel/php-fpm/cpanelphpmyadmin/sock"
+[23-Oct-2024 13:04:22] NOTICE: using inherited socket fd=7, "/var/cpanel/php-fpm/cpanelphpmyadmin/sock"
+[23-Oct-2024 13:04:22] NOTICE: fpm is running, pid 70236
+[23-Oct-2024 13:04:22] NOTICE: ready to handle connections

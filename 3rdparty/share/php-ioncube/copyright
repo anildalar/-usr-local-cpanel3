@@ -1,0 +1,62 @@
+Files: *
+Copyright: 2002-2013 ionCube Software LLP
+License: ionCube
+
+Terms & Conditions
+USER AGREEMENT
+
+As revised August 30th, 2013
+
+The following User Agreement ("the Agreement") governs the use of the ioncube.com Online PHP Encoding Service ("the Service") and ionCube Website ("the Website"). Please read the rules contained in this Agreement carefully. You can access this Agreement at any time from http://www.ioncube.com/tnc.php Your use of the Service and Website will constitute your agreement to comply with these rules. If you cannot agree with these rules, please do not use the Service. These rules may be modified from time to time; the date of the most recent revisions will appear on this page. Continued access of the Service and Website by you will constitute your acceptance of any changes or revisions to the Agreement. Your failure to follow these rules, whether listed below or in bulletins posted at various points in the Service, may result in suspension or termination of your access to the Service and Website without notice, in addition to other remedies.
+
+Rules of Usage
+
+MEMBER ACCOUNT, PASSWORD, AND SECURITY
+
+In registering for the Service you must choose a password, user name, and a current and working email address that you are legally entitled to use. You are entirely responsible for maintaining the confidentiality of your password and account. The Service stores your password in encrypted form and it can not be retrieved for reminder purposes, although you can request the password to be changed via an online password reset process. Furthermore, you are entirely responsible for any and all activities that occur under your account. You agree to notify the Service providers immediately of any unauthorised use of your account or any other breach of security. The Service providers will not be liable for any loss that you may incur as a result of someone else using your password or account, either with or without your knowledge. However, you could be held liable for losses incurred by the Service providers or another party due to someone else using your account or password. You may not use anyone else's account at any time without the permission of the account holder.
+
+USE OF THE SERVICE BY YOU
+
+Encoded files are your property, and you may distribute them freely or for commercial purposes as you wish. The techniques, data structures, and all information pertaining to the production and structure of encoded files shall at all times remain the property of the Service provider, and rights to this information does not transfer to you despite your rightful ownership of such files. You may not in any way make commercial or other unauthorised use, by publication, re-transmission, distribution, performance, caching, or otherwise, of any other material obtained through the Service, except as permitted by the Copyright Act or other law or as expressly permitted in writing by this Agreement, Service Provider or the Service.
+
+You agree not to disrupt, modify or interfere with the Service or its associated software, hardware and/or servers in any way, and you agree not to impede or interfere with others' use of the Service. You further agree not to alter or tamper with any information or materials on or associated with the Service. Other than connecting to Service Providers servers by http requests using a Web browser, you may not attempt to gain access to Service Providers servers by any means -- including, without limitation, by using administrator passwords or by masquerading as an administrator while using the Service or otherwise. You acknowledge that Service Provider has not reviewed and does not endorse the content of all sites linked to from this Service and is not responsible for the content or actions of any other sites linked to from this Service. Your linking to any service or site is at your sole risk.
+
+REVERSE ENGINEERING OF THE DECODER AND ENCODED FILES
+
+The techniques, data structures, and all information pertaining to the production and structure of encoded files, including all processes associated with the execution of encoded files are and shall at all times remain the exclusive property of the Service provider. No rights to this information is given or implied on transference of encoded files to yourself. This does not affect in any way your rights to ownership of such files or their use. Any modifications to encoded files or the decoder program or reverse engineering efforts such as, but without limitation, for the purpose of altering license information, host or time based access restrictions, obtaining passwords or other textural data, or discovering encoder and/or decoding techniques, is strictly forbidden. Furthermore, privately or publically disclosing knowledge gained of techniques used by the Service, the encoded files and the decoder, whether gained directly or indirectly, including by accident, and other than those already placed in the public domain by an authorised agent of the Service provider, is also prohibited. Such practices may result in the Service provider seeking substantial damages to the fullest extent of the legal process, and in addition and without prejudice to remedies sought by third parties for damages as a consequence of such prohibited actions.
+
+COPYRIGHT COMPLAINTS
+
+If you believe that your work has been copied and is accessible on the Service in a way that constitutes copyright infringement, or that the Service contains links or other references to another online location that contains material or activity that infringes your copyright rights, you may notify Service Provider by providing the following information (as required by the Online Copyright Infringement Liability Limitation Act of the Digital Millennium Copyright Act, 17 U.S.C. sec. 512) to our copyright agent set forth below.
+
+1. A physical or electronic signature of person authorised to act on behalf of the owner of an exclusive right that is allegedly infringed;
+
+2. Identification of the copyrighted work claimed to have been infringed, or if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;
+
+3. Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit Service Provider to locate the material;
+
+4. Information reasonably sufficient to permit Service Provider to contact the complaining party, such as an address, telephone number, and if available, an electronic mail address at which the complaining party may be contacted;
+
+5. A statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorised by the copyright owner, its agent, or the law;
+
+6. A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorised to act on behalf of the owner of an exclusive right that is allegedly infringed.
+
+INDEMNIFICATION
+
+You agree to indemnify the Service Provider and its affiliates, employees, agents , representatives and third-party service providers, and to defend and hold each of them harmless, from any and all claims and liabilities (including attorneys fees) which may arise from your submissions, from your unauthorised use of material obtained through the Service, or from your breach of this Agreement, or from any such acts through your use of the Service.
+
+DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY: YOU ACKNOWLEDGE THAT YOU ARE USING THE SERVICE AT YOUR OWN RISK. THE SERVICE IS PROVIDED "AS IS", AND THE SERVICE PROVIDER, ITS AFFILIATES AND ITS THIRD-PARTY SERVICE PROVIDERS HEREBY EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF ACCURACY, RELIABILITY, TITLE, MERCHANTABILITY, NON-INFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTY, CONDITION, GUARANTEE OR REPRESENTATION, WHETHER ORAL, IN WRITING OR IN ELECTRONIC FORM, INCLUDING BUT NOT LIMITED TO THE ACCURACY OR COMPLETENESS OF ANY INFORMATION CONTAINED THEREIN OR PROVIDED BY THE SERVICE. SERVICE PROVIDER, ITS AFFILIATES AND ITS THIRD-PARTY SERVICE PROVIDERS DO NOT REPRESENT OR WARRANT THAT ACCESS TO THE SERVICE WILL BE UNINTERRUPTED OR THAT THERE WILL BE NO FAILURES, ERRORS OR OMISSIONS OR LOSS OF TRANSMITTED INFORMATION, OR THAT NO VIRUSES WILL BE TRANSMITTED ON THE SERVICE.
+
+SERVICE PROVIDER ITS AFFILIATES AND ITS THIRD- PARTY SERVICE PROVIDERS SHALL NOT BE LIABLE TO YOU OR ANY THIRD PARTIES FOR ANY DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES ALLEGEDLY SUSTAINED ARISING OUT OF THIS AGREEMENT, THE PROVIDING OF SERVICES HEREUNDER, THE SALE OR PURCHASE OF ANY GOODS OR MERCHANDISE, YOUR ACCESS TO OR INABILITY TO ACCESS THE SERVICE, INCLUDING FOR VIRUSES ALLEGED TO HAVE BEEN OBTAINED FROM THE SERVICE, YOUR USE OF OR RELIANCE ON THE SERVICE OR ANY OF THE MERCHANDISE, INFORMATION OR MATERIALS AVAILABLE ON THE SERVICE, REGARDLESS OF THE TYPE OF CLAIM OR THE NATURE OF THE CAUSE OF ACTION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE EXCLUSION OR LIMITATION MAY NOT APPLY TO YOU. YOU MAY ALSO HAVE OTHER RIGHTS THAT VARY FROM STATE TO STATE.
+
+YOU HEREBY AGREE TO RELEASE SERVICE PROVIDER, ITS AFFILIATES AND THIRD-PARTY SERVICE PROVIDERS, AND EACH OF THEIR RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, AND AGENTS FROM CLAIMS, DEMANDS AND DAMAGES (ACTUAL AND CONSEQUENTIAL) OF EVERY KIND AND NATURE, KNOWN AND UNKNOWN, SUSPECTED AND UNSUSPECTED, DISCLOSED AND UNDISCLOSED ("CLAIMS"), ARISING OUT OF OR IN ANY WAY CONNECTED WITH YOUR USE OF THIS SITE. IF YOU ARE A CALIFORNIA RESIDENT, YOU WAIVE CALIFORNIA CIVIL CODE SECTION 1542, WHICH STATES, IN PART: "A GENERAL RELEASE DOES NOT EXTEND TO CLAIMS WHICH THE CREDITOR DOES NOT KNOW OR SUSPECT TO EXIST IN HIS FAVOUR AT THE TIME OF EXECUTING THE RELEASE, WHICH IF KNOWN BY HIM MUST HAVE MATERIALLY AFFECTED HIS SETTLEMENT WITH THE DEBTOR".
+
+TERMINATION OF ACCESS TO THE SERVICE
+
+The Service Provider reserves the right at its discretion to suspend or terminate your ability to access the Service if breaches of these terms and conditions or those currently inforce are suspected, and where such a breach may reasonably be expected to damage the Service provider or its members. In all cases attempts will be made to resolve such issues, and in the event that this is not possible, refunds of any remaining credits will be made after the deduction of any reasonable and necessary costs incurred as a result of the breach have been be made, with the exception of suspected fraud against the Service provider or its members, and in which case no refund will be payable until investigations by the relevant authorities are complete and if such a refund is then due.
+
+JURISDICTION
+
+The Service provider makes no representation that materials on the Service are appropriate, available or legal in any particular location. Those who choose to access the Service do so on their own initiative and are responsible for compliance with local laws, if and to the extent local laws are applicable.
+
+(c) ionCube Software LLP

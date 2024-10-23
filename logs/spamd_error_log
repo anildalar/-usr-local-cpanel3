@@ -1,0 +1,55 @@
+spamd: created IO::Socket::IP socket on [127.0.0.1]:783
+spamd: could not create IO::Socket::IP socket on [::1]:783: Cannot assign requested address
+Oct 23 12:59:08.103 [33746] warn: config: could not find sys rules directory
+Oct 23 12:59:08.686 [33746] warn: config: registryboundaries: no tlds defined, need to run sa-update
+Oct 23 12:59:09.069 [33746] info: spamd: server started on IO::Socket::IP [127.0.0.1]:783 (running version 4.0.1)
+Oct 23 12:59:09.069 [33746] info: spamd: server pid: 33746
+Oct 23 12:59:09.071 [33746] info: spamd: server successfully spawned child process, pid 33926
+Oct 23 12:59:09.074 [33746] info: spamd: server successfully spawned child process, pid 33927
+Oct 23 12:59:09.078 [33746] info: prefork: child states: IS
+Oct 23 12:59:09.083 [33746] info: prefork: child states: II
+spamd: created IO::Socket::IP socket on [127.0.0.1]:783
+spamd: could not create IO::Socket::IP socket on [::1]:783: Cannot assign requested address
+Oct 23 12:59:23.838 [34400] warn: config: could not find sys rules directory
+Oct 23 12:59:24.344 [34400] warn: config: registryboundaries: no tlds defined, need to run sa-update
+Oct 23 12:59:24.725 [34400] info: spamd: server started on IO::Socket::IP [127.0.0.1]:783 (running version 4.0.1)
+Oct 23 12:59:24.725 [34400] info: spamd: server pid: 34400
+Oct 23 12:59:24.728 [34400] info: spamd: server successfully spawned child process, pid 34427
+Oct 23 12:59:24.732 [34400] info: spamd: server successfully spawned child process, pid 34428
+Oct 23 12:59:24.737 [34400] info: prefork: child states: IS
+Oct 23 12:59:24.737 [34400] info: prefork: child states: II
+Oct 23 12:59:26.746 [34400] info: spamd: handled cleanup of child pid [34428] due to SIGCHLD: interrupted, signal 2 (0002)
+spamd: created IO::Socket::IP socket on [127.0.0.1]:783
+spamd: could not create IO::Socket::IP socket on [::1]:783: Cannot assign requested address
+Oct 23 13:00:31.096 [40313] warn: config: could not find sys rules directory
+Oct 23 13:00:31.627 [40313] warn: config: registryboundaries: no tlds defined, need to run sa-update
+Oct 23 13:00:32.089 [40313] info: spamd: server started on IO::Socket::IP [127.0.0.1]:783 (running version 4.0.1)
+Oct 23 13:00:32.090 [40313] info: spamd: server pid: 40313
+Oct 23 13:00:32.096 [40313] info: spamd: server successfully spawned child process, pid 40377
+Oct 23 13:00:32.100 [40313] info: spamd: server successfully spawned child process, pid 40378
+Oct 23 13:00:32.106 [40313] info: prefork: child states: II
+spamd: created IO::Socket::IP socket on [127.0.0.1]:783
+spamd: could not create IO::Socket::IP socket on [::1]:783: Cannot assign requested address
+Oct 23 13:02:29.363 [68732] info: zoom: able to use 1194/1195 'body_0' compiled rules (99.916%)
+Oct 23 13:02:31.122 [68732] info: spamd: server started on IO::Socket::IP [127.0.0.1]:783 (running version 4.0.1)
+Oct 23 13:02:31.123 [68732] info: spamd: server pid: 68732
+Oct 23 13:02:31.127 [68732] info: spamd: server successfully spawned child process, pid 69461
+Oct 23 13:02:31.133 [68732] info: spamd: server successfully spawned child process, pid 69462
+Oct 23 13:02:31.137 [68732] info: prefork: child states: II
+Oct 23 13:02:33.148 [68732] info: spamd: handled cleanup of child pid [69462] due to SIGCHLD: interrupted, signal 2 (0002)
+Oct 23 13:14:20.673 [68732] info: zoom: able to use 1194/1195 'body_0' compiled rules (99.916%)
+Oct 23 13:14:22.411 [68732] info: spamd: server started on IO::Socket::INET [\x{7F}\x{00}\x{00}\x{01}]:783 (running version 4.0.1)
+Oct 23 13:14:22.412 [68732] info: spamd: server pid: 68732
+Oct 23 13:14:22.416 [68732] info: spamd: server successfully spawned child process, pid 71448
+Oct 23 13:14:22.421 [68732] info: spamd: server successfully spawned child process, pid 71449
+Oct 23 13:14:22.425 [68732] info: prefork: child states: BI
+Oct 23 13:14:22.426 [71448] info: spamd: connection from localhost.localdomain [127.0.0.1]:57458 to port 783, fd 5
+Oct 23 13:14:22.525 [68732] info: prefork: child states: II
+Oct 23 13:20:50.599 [71448] info: spamd: connection from localhost.localdomain [127.0.0.1]:54384 to port 783, fd 5
+Oct 23 13:20:50.648 [68732] info: prefork: child states: II
+Oct 23 13:28:11.105 [71448] info: spamd: connection from localhost.localdomain [127.0.0.1]:56558 to port 783, fd 5
+Oct 23 13:28:11.174 [68732] info: prefork: child states: II
+Oct 23 13:34:36.205 [71448] info: spamd: connection from localhost.localdomain [127.0.0.1]:60690 to port 783, fd 5
+Oct 23 13:34:36.274 [68732] info: prefork: child states: II
+Oct 23 13:40:56.943 [71448] info: spamd: connection from localhost.localdomain [127.0.0.1]:46886 to port 783, fd 5
+Oct 23 13:40:57.006 [68732] info: prefork: child states: II

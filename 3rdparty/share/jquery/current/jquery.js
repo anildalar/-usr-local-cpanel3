@@ -1,0 +1,1 @@
+/usr/local/cpanel/3rdparty/share/jquery/3.6.0/jquery-3.6.0.js

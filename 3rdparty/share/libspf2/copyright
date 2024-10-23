@@ -1,0 +1,5 @@
+Files: *
+Copyright: 2005 Wayne Schlitt, Shevek
+License: LGPL-2.1+ (please see /usr/local/cpanel/3rdparty/share/common-licenses/LGPL-2.1)
+    or BSD-2-clause (please see /usr/local/cpanel/3rdparty/share/common-licenses/BSD-2)
+Comment: Some code in the 'replace' subdirectory was obtained from other sources and have different, but compatible, licenses.  These routines are used only when the native libraries for the OS do not contain these functions.  You should review the licenses and copyright statements in these functions if you are using an OS that needs these functions.

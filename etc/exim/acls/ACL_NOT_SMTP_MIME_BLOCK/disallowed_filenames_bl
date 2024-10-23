@@ -1,0 +1,11 @@
+# Reject inbound mail with potentially dangerous attachments
+# Obfuscation of file names using parameter value continuation evades other filters, but not this one
+
+deny
+  log_message = DENY: disallowed \"$mime_filename\"
+  condition = ${if match \
+  {${lc:$mime_filename}} \
+  {[.](ad[ep]|ba[st]|chm|cmd|com|cpl|crt|eml|exe|hlp|hta|in[fs]|isp|jse?|lnk|md[be]|ms[cipt]|pcd|pif|reg|scr|sct|shs|url|vb[se]|ws[fhc])\$}}
+  message = Attached file '$mime_filename' has disallowed extension.
+
+accept

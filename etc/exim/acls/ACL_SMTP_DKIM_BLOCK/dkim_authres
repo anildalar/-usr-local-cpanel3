@@ -1,0 +1,8 @@
+.ifdef ARCSIGNING
+  warn
+    condition = ${if def:h_dkim-signature: {yes}{no}}
+    add_header = ${authresults {$primary_hostname}}
+.endif
+.ifndef DKIMREJECT
+  accept
+.endif

@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+# Stop sdvertising cpanel-onboot.service in WHM UI
+
+/usr/bin/unlink /usr/local/cpanel/whostmgr/docroot/.cpanel-onboot

@@ -1,0 +1,51 @@
+<!-- Allow mixpanel tracking if user consent is given. -->
+[%
+# These checks are taken from /usr/local/cpanel/whostmgr/docroot/templates/menu/main.tmpl
+# Ideally this should be part of Whostmgr to make it reusable.
+# Copied the checks here so that we do not depend on main.tmpl
+USE Whostmgr;
+USE JSON;
+USE VarCache;
+USE NVData;
+
+SET NVDATA_STORE = 'campaign-banner';
+
+# TODO: Repackage this into a TT Plugin DUCKS-924
+SET has_analytics = template_exists("/var/cpanel/customizations/whm/includes/cp_analytics_whm.html.tt");
+SET server_analytics_setting = CPANEL.analytics_ui_includes_are_enabled();
+SET user_consent_analytics_setting = NVData.get('analytics', undef, 0, 'whm') == "on";
+
+SET banner_analytics = "";
+IF has_analytics && server_analytics_setting && user_consent_analytics_setting;
+    banner_analytics = "banner-analytics";
+END;
+# ^^^ TODO: Repackage this into a TT Plugin DUCKS-924
+
+SET campaign_data = NVData.get(campaign_id _ '_survey', NVDATA_STORE, 0, 'whm');
+
+IF step.id;
+    SET survey_id = campaign_id _ '.' _ step.id _ '_survey';
+ELSE;
+    SET survey_id = campaign_id _ '_survey';
+END;
+survey_data_for_step = NVData.get(survey_id, campaign_id, 0, 'whm');
+%]
+<campaign-banner
+    banner-title="[% locale.lextext(step.cta.title) %]"
+    banner-description="[% locale.lextext(step.cta.description) %]"
+    campaign-id=[% campaign_id.json %]
+    step-id=[% step.id.json %]
+    image-url="[% image_url %]"
+    [% IF step.cta.offsite; 'cta-offsite'; ELSE; ''; END %]
+    cta-link="[% step.cta.url %]"
+    cta-text="[% step.cta.button_text %]"
+    survey-title="[% locale.lextext(step.survey.title) %]"
+    survey-yes="[% IF step.survey.yes_label; locale.lextext(step.survey.yes_label); ELSE; locale.maketext('Yes'); END; %]"
+    survey-no="[% IF step.survey.no_label; locale.lextext(step.survey.no_label); ELSE; locale.maketext('No'); END; %]"
+    show-again-in="[% show_again_in %]"
+    cp-security-token="[% cp_security_token %]"
+    close-title="[% locale.maketext('Close') %]"
+    [% IF dismissible; 'dismissible'; ELSE; ''; END %]
+    [% IF survey_data_for_step; 'survey-dismissed'; ELSE; ''; END %]
+    [% banner_analytics %]
+></campaign-banner>

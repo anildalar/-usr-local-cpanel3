@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/share/cloudlinux-linksafe/cpanel/hooks/cloudlinux_linksafe_hook.sh   #cloudlinux-linksafe

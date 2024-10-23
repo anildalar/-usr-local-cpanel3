@@ -1,0 +1,69 @@
+#!/usr/local/cpanel/3rdparty/bin/perl
+
+#                                      Copyright 2024 WebPros International, LLC
+#                                                           All rights reserved.
+# copyright@cpanel.net                                         http://cpanel.net
+# This code is subject to the cPanel license. Unauthorized copying is prohibited.
+
+package scripts::post_snapshot;
+
+use cPstrict;
+use Cpanel::Imports;
+use Cpanel::ImagePrep         ();
+use Cpanel::ImagePrep::Common ();
+use Cpanel::ImagePrep::Output ();
+
+use base 'Cpanel::HelpfulScript';
+use constant _OPTIONS => ('yes');
+
+=head1 NAME
+
+scripts/post_snapshot
+
+=head1 SYNOPSIS
+
+/usr/local/cpanel/scripts/post_snapshot [--yes]
+
+B<WARNING>: This is a destructive action. If you run this script on a production
+server, data loss will occur. Pass the --yes option to acknowledge that you
+understand this warning. If any cPanel users are detected, further confirmation
+will be required.
+
+Updates the running system with changes needed after it starts from a snapshot,
+presumably to be a different IP address and hostname.
+
+This script will abort and exit non-zero if one or more operations attempted
+during post_snapshot fail.
+
+If this script exits nonzero when used according to the documentation, you
+should consider the server potentially damaged and unusable.
+
+=cut
+
+exit( __PACKAGE__->new(@ARGV)->run // 0 ) unless caller;
+
+sub run ($self) {    # returns exit code, not boolean
+
+    my $common = Cpanel::ImagePrep::Common->new();
+
+    if ( !$self->getopt('yes') ) {
+        die $self->help('Please read the warning in the usage output before using this script.');
+    }
+
+    local $| = 1;    # helps the test suite stream_cmd method
+
+    my ( $table, $cb ) = Cpanel::ImagePrep::Output->get_status_output_callback();
+
+    my ( $ok, $reason ) = Cpanel::ImagePrep::post_snapshot(
+        output_callback => $cb,
+    );
+    $common->raw_logmsg( $table->draw );
+    $common->regular_logmsg($reason);
+
+    if ( !$ok ) {
+        $common->regular_logmsg('See the output before the summary table for more detail about the failure(s).');
+    }
+    return $ok ? 0 : 1;
+}
+
+1;

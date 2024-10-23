@@ -1,0 +1,23 @@
+{
+  "spec_version": 2,
+  "meta": {
+    "meta_version": 2,
+    "content": {
+      "vendor": "WebPros, L.L.C.",
+      "name": {
+        "short": "Vulnerability Protection",
+        "long": "Vulnerability Protection"
+      },
+      "readonly": 1,
+      "first_appears_in": "1",
+      "last_appears_in": "999",
+      "abstract": "<p>WP Toolkit v6.4 introduces a new security feature for WordPress websites: Vulnerability Protection.</p><p>Vulnerability protection is a non-invasive, automated, lightweight way to neutralize vulnerabilities in WordPress plugins, themes, and WordPress core. It keeps your site secured while you are waiting for an update with proper fix to be available. Once enabled on a site, vulnerability protection neutralizes high and medium risk vulnerabilities automatically whenever they appear without any need for user engagement.</p><p>Key feature points:</p><ol><li style=\"list-style-type:disc;\"><p>A WordPress plugin will be installed when protection is enabled to automatically neutralize dangerous vulnerabilities by applying special protection rules.</p></li><li style=\"list-style-type:disc;\"><p>Protection rules work like a firewall, so they never touch or modify the site code.</p></li><li style=\"list-style-type:disc;\"><p>Protection rules are applied and removed only for specific vulnerabilities on any given site, so they have minimal effect on site performance.</p></li><li style=\"list-style-type:disc;\"><p>This feature and its corresponding upsell prompts are not visible to cPanel users by default. Only the server administrator can see it.</p></li><li style=\"list-style-type:disc;\"><p>You can control the access to this feature via separate limit in your packages.</p></li><li style=\"list-style-type:disc;\"><p>Vulnerability protection is presented by the WP Guardian platform and it requires purchasing a separate cPanel add-on called WP Guardian (cPanel addon).</p></li><li style=\"list-style-type:disc;\"><p>The technical name of this feature is \"virtual patching\", and it's powered by Patchstack.</p></li></ol>",
+      "version": 1,
+      "locale_abstract_strings": []
+    },
+    "showcase": {
+      "is_recommended": 1,
+      "is_spotlight_feature": 0
+    }
+  }
+}

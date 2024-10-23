@@ -1,0 +1,22 @@
+[Unit]
+
+Description=cPanel on Boot service
+After=network.target network-online.target multi-user.target
+
+[Service]
+Type=oneshot
+
+# run once per boot time
+RemainAfterExit=yes
+ExecStart=/bin/bash -c 'echo "$(/usr/bin/date +"[%%Y-%%m-%%d %%T %%z]") cpanel-onboot - service start (reboot detected)" >>/usr/local/cpanel/logs/error_log'
+ExecStart=/usr/local/cpanel/libexec/cpanel-onboot
+ExecStart=/bin/bash -c 'echo "$(/usr/bin/date +"[%%Y-%%m-%%d %%T %%z]") cpanel-onboot - service finished" >>/usr/local/cpanel/logs/error_log'
+
+Environment="LANG=C"
+Environment="LANGUAGE=C"
+Environment="LC_ALL=C"
+Environment="LC_MESSAGES=C"
+Environment="LC_CTYPE=C"
+
+[Install]
+WantedBy=multi-user.target

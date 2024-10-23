@@ -1,0 +1,50 @@
+-- RESTART MARKER (PID 33795 at 2024-10-23 12:59:07 +0200, 1729681147)--
+[2024-10-23 12:59:08 +0200] Checking Logs
+[2024-10-23 12:59:08 +0200] I/O: best-effort: prio 7
+[2024-10-23 12:59:08 +0200] [sepxferlog]
+[2024-10-23 12:59:08 +0200] [sepxferlog] complete
+[2024-10-23 12:59:08 +0200] Done Checking Logs
+[2024-10-23 12:59:08 +0200] Checking Bandwidth
+[2024-10-23 12:59:08 +0200] I/O: best-effort: prio 6
+[2024-10-23 12:59:08 +0200] Processing bandwidth.
+[2024-10-23 12:59:08 +0200] Loading the root bandwidth cache database failed because of an error: Cpanel::Exception::Database::ConnectError/(XID 4cxvxg) The system failed to connect to the “SQLite” database “/var/cpanel/bandwidth_cache.sqlite” because of an error: SQLITE_CANTOPEN (unable to open database file)
+ at /usr/local/cpanel/Cpanel/DBI.pm line 103.
+	Cpanel::DBI::__ANON__(__CPANEL_HIDDEN__...) called at /usr/local/cpanel/3rdparty/perl/536/cpanel-lib/Try/Tiny.pm line 121
+	Try::Tiny::try(CODE(0x22aefb0), Try::Tiny::Catch=REF(0x22ac6d8)) called at /usr/local/cpanel/Cpanel/DBI.pm line 115
+	Cpanel::DBI::connect("Cpanel::DBI::SQLite", "dbi:SQLite:dbname=/var/cpanel/bandwidth_cache.sqlite", undef, undef, HASH(0x22ac900)) called at /usr/local/cpanel/Cpanel/DBI/SQLite.pm line 59
+	Cpanel::DBI::SQLite::_connect("Cpanel::DBI::SQLite", undef, undef, HASH(0x1465e20)) called at /usr/local/cpanel/Cpanel/DBI/ConnectUsesHash.pm line 35
+	Cpanel::DBI::ConnectUsesHash::connect("Cpanel::DBI::SQLite", HASH(0x22ac930)) called at /usr/local/cpanel/Cpanel/BandwidthDB/RootCache.pm line 266
+	Cpanel::BandwidthDB::RootCache::_get_production_dbh(Cpanel::BandwidthDB::RootCache=HASH(0x22ac8a0), HASH(0x173c560)) called at /usr/local/cpanel/Cpanel/SQLite/AutoRebuildBase.pm line 174
+	Cpanel::SQLite::AutoRebuildBase::new_without_rebuild("Cpanel::BandwidthDB::RootCache") called at /usr/local/cpanel/Cpanel/Logd.pm line 429
+	Cpanel::Logd::__ANON__() called at /usr/local/cpanel/3rdparty/perl/536/cpanel-lib/Try/Tiny.pm line 100
+	eval {...} called at /usr/local/cpanel/3rdparty/perl/536/cpanel-lib/Try/Tiny.pm line 91
+	Try::Tiny::try(CODE(0x22ac858), Try::Tiny::Catch=REF(0x2244c70)) called at /usr/local/cpanel/Cpanel/Logd.pm line 434
+	Cpanel::Logd::scanbandwidth("", undef) called at libexec/cpanellogd.pl line 280
+
+[2024-10-23 12:59:08 +0200] Done Checking Bandwidth
+==> Retention days: 10
+[2024-10-23 13:07:28 +0200] Checking Bandwidth
+[2024-10-23 13:07:28 +0200] I/O: best-effort: prio 6
+[2024-10-23 13:07:28 +0200] Processing bandwidth.
+[2024-10-23 13:07:28 +0200] Done Checking Bandwidth
+==> Retention days: 10
+[2024-10-23 13:15:49 +0200] Checking Logs
+[2024-10-23 13:15:49 +0200] I/O: best-effort: prio 7
+[2024-10-23 13:15:49 +0200] [sepxferlog]
+[2024-10-23 13:15:49 +0200] [sepxferlog] complete
+[2024-10-23 13:15:49 +0200] Done Checking Logs
+[2024-10-23 13:24:09 +0200] Checking Bandwidth
+[2024-10-23 13:24:09 +0200] I/O: best-effort: prio 6
+[2024-10-23 13:24:09 +0200] Processing bandwidth.
+[2024-10-23 13:24:09 +0200] Done Checking Bandwidth
+==> Retention days: 10
+[2024-10-23 13:32:29 +0200] Checking Logs
+[2024-10-23 13:32:29 +0200] I/O: best-effort: prio 7
+[2024-10-23 13:32:29 +0200] [sepxferlog]
+[2024-10-23 13:32:29 +0200] [sepxferlog] complete
+[2024-10-23 13:32:29 +0200] Done Checking Logs
+[2024-10-23 13:40:50 +0200] Checking Bandwidth
+[2024-10-23 13:40:50 +0200] I/O: best-effort: prio 6
+[2024-10-23 13:40:50 +0200] Processing bandwidth.
+[2024-10-23 13:40:50 +0200] Done Checking Bandwidth
+==> Retention days: 10

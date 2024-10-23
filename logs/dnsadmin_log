@@ -1,0 +1,12 @@
+Use of uninitialized value $named_conf_zonedir_cache_filesys_mtime in concatenation (.) or string at /usr/local/cpanel/Cpanel/NameServer/Conf/BIND.pm line 155.
+[2024-10-23 12:57:28 +0200] info [dnsadmin] Hot restart of dnsadmin
+dnsadmin 4.0 entering server mode
+[2024-10-23 12:57:28 +0200] info [dnsadmin] Recovering from dormant or doing hot restart listen fd=3
+Use of uninitialized value $named_conf_zonedir_cache_filesys_mtime in concatenation (.) or string at /usr/local/cpanel/Cpanel/NameServer/Conf/BIND.pm line 155.
+dnsadmin 4.0 entering server mode
+[2024-10-23 12:59:01 +0200] info [dnsadmin] Recovering from dormant or doing hot restart listen fd=4
+[2024-10-23 12:59:01 +0200] info [dnsadmin] Accepted connection on fd=5
+[2024-10-23 12:59:20 +0200] info [dnsadmin] Hot restart of dnsadmin
+dnsadmin 4.0 entering server mode
+[2024-10-23 12:59:20 +0200] info [dnsadmin] Recovering from dormant or doing hot restart listen fd=4
+[2024-10-23 13:04:55 +0200] info [dnsadmin] Switching dnsadmin to dormant mode: inactive for 5 minutes

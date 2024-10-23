@@ -1,0 +1,7 @@
+Files: *
+Copyright: 2010-2012 Google
+License: MIT (please see /usr/local/cpanel/3rdparty/share/common-licenses/MIT)
+
+Files: docs/*
+Copyright: 2010-2012 Google
+License: CC-BY (please see /usr/local/cpanel/3rdparty/share/common-licenses/CC-3.0)

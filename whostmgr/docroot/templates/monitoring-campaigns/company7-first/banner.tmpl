@@ -1,0 +1,41 @@
+<!-- Allow mixpanel tracking if user consent is given. -->
+[%
+# These checks are taken from /usr/local/cpanel/whostmgr/docroot/templates/menu/main.tmpl
+# Ideally this should be part of Whostmgr to make it reusable.
+# Copied the checks here so that we do not depend on main.tmpl
+USE Whostmgr;
+USE JSON;
+USE VarCache;
+USE NVData;
+
+SET NVDATA_STORE = 'campaign-banner';
+
+SET has_analytics = template_exists("/var/cpanel/customizations/whm/includes/cp_analytics_whm.html.tt");
+SET server_analytics_setting = CPANEL.analytics_ui_includes_are_enabled();
+SET user_consent_analytics_setting = NVData.get('analytics', undef, 0, 'whm') == "on";
+
+SET banner_analytics = "";
+IF has_analytics && server_analytics_setting && user_consent_analytics_setting;
+    banner_analytics = "banner-analytics";
+END;
+
+SET campaign_data = NVData.get(campaign_id _ '_survey', NVDATA_STORE, 0, 'whm');
+
+%]
+
+<campaign-banner-360
+    title="[% locale.maketext('Coming soon to WHM: Advanced Server Monitoring') %]"
+    description="[% locale.maketext('This feature will allow you to monitor your server’s performance at a glance.') %]"
+    campaign-id=[% campaign_id.json %]
+    image-url="[% image_url %]"
+    learn-more-link="https://go.cpanel.net/360monitoring-WHMBanner"
+    learn-more-text="[% locale.maketext('Learn More') %]"
+    [% campaign_data ? 'survey-dismissed' : '' %]
+    survey-title="[% locale.maketext('Does this announcement provide value for you?') %]"
+    survey-yes="[% locale.maketext('Yes') %]"
+    survey-no="[% locale.maketext('No') %]"
+    show-again-in="[% show_again_in %]"
+    cp-security-token="[% cp_security_token %]"
+    dismissible
+    [% banner_analytics %]
+></campaign-banner-360>

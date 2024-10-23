@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+# Start advertising cpanel-onboot.service in WHM UI
+
+/usr/bin/touch /usr/local/cpanel/whostmgr/docroot/.cpanel-onboot

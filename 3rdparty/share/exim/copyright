@@ -1,0 +1,5 @@
+Files: *
+Copyright: Copyright (c) 1995-2012 University of Cambridge
+Comment: Detailed copyright information for everything included with exim can be found at:
+  /usr/local/cpanel/3rdparty/share/exim/NOTICE
+License: GPL-2 (please see /usr/local/cpanel/3rdparty/share/common-licenses/GPL-2)

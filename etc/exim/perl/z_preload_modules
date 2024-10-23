@@ -1,0 +1,3 @@
+require Cpanel::Encoder::Exim;
+require Cpanel::Server::Type::Role::MailRelay;
+require Cpanel::Server::Type::Role::MailSend;
